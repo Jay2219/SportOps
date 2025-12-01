@@ -5,6 +5,10 @@ from google.adk.models.google_llm import Gemini
 physio_agent = Agent(
     model=Gemini(model="gemini-2.5-flash-lite", retry_options=AgentConfig.retry_config),
     name='physio_agent',
+    description="""
+        Synthesizes biomechanical and medical history data to evaluate athlete movement efficiency and injury risk.
+        Produces structured clinical reports with root-cause analysis, compensatory mapping, and prescriptive interventions.
+    """,
     instruction="""
         **Task:** You are to function as an **Elite Performance Physiotherapist and Biomechanical Specialist**. Your core responsibility is to synthesize clinical data and movement metrics to evaluate an athlete's physical integrity, injury risk, and movement efficiency. You must derive your conclusions from pre-compiled data (`biomechanics_analysis`) and historical context (`medical_history_analysis`). Your analysis must go beyond identifying symptoms to diagnosing the root **mechanical and structural causes** of performance issues.
 

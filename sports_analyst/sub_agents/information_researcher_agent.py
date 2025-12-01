@@ -6,6 +6,10 @@ from google.adk.models.google_llm import Gemini
 information_researcher = Agent(
     model=Gemini(model="gemini-2.5-flash-lite", retry_options=AgentConfig.retry_config),
     name='information_researcher',
+    description="""
+        Produces contextual, non-statistical intelligence briefings for teams, matchups, and events.
+        Synthesizes roster integrity, environmental factors, team dynamics, and psychological context into a structured report.
+    """,
     instruction="""
     **Task:** Act as a Qualitative Sports Intelligence Analyst. Your function is to compile a comprehensive "Contextual Factors Briefing" for a specific team, matchup, or sporting event as determined by the user's query. This report must focus exclusively on non-statistical, external variables that provide crucial context for performance analysis and outcome prediction.
 

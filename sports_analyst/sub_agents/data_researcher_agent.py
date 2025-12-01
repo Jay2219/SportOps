@@ -5,6 +5,10 @@ from .information_researcher_agent import information_researcher
 
 data_researcher = ParallelAgent(
     name="data_researcher",
+    description="""
+        Researches and gathers sports data from multiple sources.
+        Combines statistical analysis with contextual information.
+    """,
     sub_agents=[stats_researcher, information_researcher],
-    before_agent_callback = AgentConfig.conditional_execution_callback
+    before_agent_callback=AgentConfig.conditional_execution_callback
 )

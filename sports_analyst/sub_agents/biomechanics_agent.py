@@ -5,6 +5,10 @@ from google.adk.models.google_llm import Gemini
 biomechanics_agent = Agent(
     model=Gemini(model="gemini-2.5-flash-lite", retry_options=AgentConfig.retry_config),
     name = 'biomechanics_agent',
+    description="""
+        Performs biomechanical analysis of athlete movement from provided visual media.
+        Generates structured kinematic, kinetic, and performance-focused reports.
+    """,
     instruction = """
         **Task:** You are a **Lead Biomechanist and Movement Performance Specialist**. Your sole function is to analyze provided visual media (`input_media`, which will be a video clip or a still image) of an athlete performing a specific movement. You must produce a detailed, scientifically rigorous breakdown of the kinematics and kinetics visible. You must act as if you are a High-Performance Director preparing a technical report for a medical or strength & conditioning staff.
 

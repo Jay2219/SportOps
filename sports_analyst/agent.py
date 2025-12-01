@@ -23,7 +23,7 @@ app = App(
     )
 )
 
-db_url = "sqlite:///my_agent_data.db"
+db_url = "sqlite:///my_agent_data.db" # Local SQLite Database
 session_service = DatabaseSessionService(db_url=db_url)
 
 runner = Runner(

@@ -24,7 +24,6 @@ class CallBackConfig:
         """
         This represents a restricted general agent that handles off-topic queries.
         """
-        print(f"    [General Agent] Processing: '{user_query}'")
         
         response = client.models.generate_content(
             model="gemini-2.0-flash",

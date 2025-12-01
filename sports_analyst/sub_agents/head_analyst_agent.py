@@ -5,6 +5,10 @@ from google.adk.models.google_llm import Gemini
 head_analyst = Agent(
     model=Gemini(model="gemini-2.5-flash-lite", retry_options=AgentConfig.retry_config),
     name='head_analyst',
+    description="""
+        Generates adaptive sports-analysis reports ranging from concise briefs to full professional evaluations.
+        Report depth is automatically determined by the complexity of the user's query and available analyst inputs.
+    """,
     instruction="""
         You are a **Senior Sports Analyst** specializing in data interpretation and professional reporting.
 

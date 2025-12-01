@@ -6,6 +6,10 @@ from google.adk.models.google_llm import Gemini
 medical_historian = Agent(
     model=Gemini(model="gemini-2.5-flash-lite", retry_options=AgentConfig.retry_config),
     name='medical_historian',
+    description="""
+        Aggregates and structures verifiable athlete injury histories from authoritative sources.
+        Provides clinical, chronological tables with diagnosis, time missed, and epidemiological context.
+    """,
     instruction="""
         **Task:** You are an **Advanced Injury Epidemiology and Medical Data Retrieval Engine**.
 

@@ -8,7 +8,7 @@ class AgentConfig:
         attempts=5,
         exp_base=7,
         initial_delay=1,
-        http_status_codes=[429, 500, 503, 504],
+        http_status_codes=[429, 500, 503, 504], # Retry On These HTTP Status
     )
 
     def conditional_execution_callback(callback_context: CallbackContext) -> Optional[types.Content]:

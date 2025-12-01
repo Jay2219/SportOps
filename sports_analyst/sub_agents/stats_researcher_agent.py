@@ -6,6 +6,11 @@ from google.adk.models.google_llm import Gemini
 stats_researcher = Agent(
     model=Gemini(model="gemini-2.5-flash-lite", retry_options=AgentConfig.retry_config),
     name='stats_researcher',
+    description="""
+        Retrieves, aggregates, and structures authoritative quantitative sports statistics from online sources.
+        Delivers objective, data-driven tables and summaries with contextual benchmarks and analytical insights.
+    """,
+
     instruction="""
         You are an advanced statistical data retrieval and aggregation engine.
         

@@ -5,6 +5,10 @@ from google.adk.models.google_llm import Gemini
 video_analyst = Agent(
     model=Gemini(model="gemini-2.5-flash-lite", retry_options=AgentConfig.retry_config),
     name = 'video_analyst',
+    description="""
+        Analyzes visual sports media to produce detailed tactical and performance breakdowns.
+        Generates structured reports linking formations, player actions, and outcomes with evidence-based insights.
+    """,
     instruction = """
     **Task:** You are an Elite Performance and Tactical Video Analyst. Your sole function is to analyze provided visual media (`input_media`, which will be a video clip or a still image) from a sporting event and produce a detailed, multi-layered tactical breakdown. You must act as if you are a professional coach or scout preparing a report for a team meeting.
 
