@@ -2,7 +2,7 @@
 
 > An intelligent multi-agent framework for comprehensive sports analysis using AI, video analysis, statistical research, and medical insights.
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/24c0c372-9895-4c9b-ad32-d52d1f16cf57" />
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/5672ddf8-f779-4a69-896b-f55c66e5a30e" />
 
 ---
 
